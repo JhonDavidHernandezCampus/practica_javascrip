@@ -6,26 +6,38 @@ const standar = {
     Proficiency_level_with_Standard:["resive un viaje a dubay","Resive una Toyota","resive una moto","resive un cauderno","debe pagar un vargo","paga toda la carrera"],
 };
 
-var tipo;
-
-tipo = prompt("Introduce la forma de calificacion (traditional = 1 , Point = 2 , Letter = 3): ");
-
-
 console.table(standar);
-let den=0;
-
-
-
-
-switch(den){
+let tipo=0;
+switch(tipo){
     case 0:
-    if(tipo == 1 ){
-        console.log("hola");
-    };
-    break;
+        tipo = prompt("Introduce la forma de calificacion (traditional = 1 , Point = 2 , Letter = 3 y Rating= 4):");
+        console.log(tipo);
+
+        break
+
     case 1:
+        console.log("------Este es el mode de calificacion tradicional------");
+        let cal = prompt("Digite la calificaion entre 0 a 100 : ");   
+    if(cal >=90 && cal <=100 ){
+        console.log("La nota es muy buena , el estudianre resive");
+        console.log(standar.Proficiency_level_with_Standard(1));
+    }else if(cal >=80 && cal <=89){
+
+    }else if(cal >=70 && cal <=100){
+
+    }else if(cal >=90 && cal <=100){
+
+    }else if(cal >=90 && cal <=100){
+
+    }
+    break;
+    case 2:
+
+    break;   
+
+    default:
+    // Cualquier otro caso
+    calificacion = " no valido ";
+    break;
 
 }
-
-    
-
